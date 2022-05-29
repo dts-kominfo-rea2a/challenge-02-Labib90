@@ -23,19 +23,31 @@ function lakukanLooping(arrPegawai) {
 
       Contoh: ["Aisyah Nirmala", "Mansur Faisal", ...]
   */
-  let hasilLooping = null;
+  let hasilLooping = while(arrPegawai === namaDepan || arrPegawai === namaBelakang  ){
+    [console.log(namaDepan + namaBelakang);]
+    
+    
+  };
 
   /*
     TODO 2: Buatlah sebuah variabel bernama "jumlahPria"
       yang berisi jumlah pria dari masing masing pegawai
   */
-  let jumlahPria = null;
+  let jumlahPria = if(M === true){
+    console.count(M);
+  } else {
+    console.log("Tidak ada pegawai Pria!");
+  }
 
   /*
     TODO 3: Buatlah sebuah variabel bernama "jumlahWanita"
       yang berisi jumlah wanita dari masing masing pegawai
   */
-  let jumlahWanita = null;
+  let jumlahWanita = if(F === true){
+    console.count(F);
+  } else {
+    console.log("Tidak ada pegawai Wanita!")
+  }
 
   /*
     TODO 4: Buatlah sebuah variabel bernama "komentar"
@@ -48,7 +60,15 @@ function lakukanLooping(arrPegawai) {
       Apabila imbang, maka komentar akan berisi:
         "Jumlah Pria dan Wanita berimbang"
   */
-  let komentar = null;
+  let komentar = if(jumlahPria >= jumlahWanita){
+    console.log("Jumlah Pria lebih banyak dari Wanita!");
+  } else if(jumlahWanita >= jumlahPria){
+    console.log("Jumlah Wanita lebih banyak dari Pria");
+  } else if(jumlahPria === jumlahWanita){
+    console.log(  "Jumlah Pria dan Wanita berimbang");
+  } else {
+    console.log("Belum ada jumlah pegawai Pria dan Wanita");
+  }
 
   // ! JANGAN DIMODIFIKASI
   return {
